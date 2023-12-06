@@ -7,6 +7,8 @@
     <link rel="stylesheet" href="blog.css">
 </head>
 <body>
+
+
     <header>
         <h1>Blog</h1>
         <?php 
@@ -35,9 +37,14 @@
         
             include("Manager_class.php");
             $manage = new Manager($connexion);
-            $manage->getAll()
+            $manage->getAll();
+
+            if (isset($_POST['delete'])) {
+                $manage->deletePost();
+            }
         
         ?>
     </main>
 </body>
+<script src="https://kit.fontawesome.com/6a2b59470e.js" crossorigin="anonymous"></script>
 </html>

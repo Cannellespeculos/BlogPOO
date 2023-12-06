@@ -36,3 +36,10 @@ img {
 hr {
     width: 80%;
 }
+
+article form button {
+    width: 30px;
+    padding: 15px 10px;
+    background-color: #a61f16;
+    color: white;
+}
